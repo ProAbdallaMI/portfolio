@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -7,8 +9,8 @@ body {
 #home {
   background-color:  #7600bc;
   padding-bottom: 1cm;
-  margin-left:-1cm;
-  margin-right:-1cm;
+  
+  
   margin-top:-1cm;
   padding-top: 2cm;
   padding-bottom: 2cm;
@@ -25,14 +27,14 @@ body {
 
 .topmenu:hover {
   color: white;
-  font-weight: bold;
   text-decoration: underline;
   /* Add the styles here */
 }
 
 .topdiv {
+  
+  padding: 10px;
   float: right;
-  padding-right: 1cm;
 }
 
 .profile_name {
@@ -105,13 +107,16 @@ h2 {
   font-size: 25px;
   color: rgb(128, 128, 128);
   margin-top: -1cm;
+  padding-right: 60px;
+  text-align: justify;
 }
 
 .profile_image {
-  width: 550px;
-  height: fit-content;
+  width: 300px;
+  height: 400px;
   vertical-align: middle;
-  margin: 5px;
+  margin: 0px 50px;
+  margin-top: 80px;
 }
 
 /* Skills */
@@ -120,6 +125,7 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
+  padding-left: 30px;
 }
 
 .skill {
