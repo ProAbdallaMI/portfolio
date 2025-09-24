@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
+  "homepage": "https://proabdallami.github.io/portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,6 +13,9 @@
     "test:watch": "vitest"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
