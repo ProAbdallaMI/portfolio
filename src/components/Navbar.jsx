@@ -1,16 +1,12 @@
+import { LuMenu } from "react-icons/lu";
+
 const Navbar = () => {
   return (
     <nav className="bg-gray-800 p-4 text-white">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="text-lg font-bold flex flex-col items-center">
-          <h2>My Portfolio</h2>
-          <img
-            src="./favicon.svg"
-            alt="Logo"
-            className="inline-block w-8 h-8"
-          />
-        </div>
-        <div>
+      <div className="container mx-auto flex justify-center items-center">
+        <LuMenu className="absolute top-5 left-5 text-white text-xl" />
+        <div className="text-lg font-bold">Portfolio</div>
+        <div className="hidden">
           <a href="#home" className="px-3 hover:underline">
             Home
           </a>
