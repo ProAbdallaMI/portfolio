@@ -5,10 +5,9 @@ import react from "@vitejs/plugin-react";
 // https://vite.dev/config/
 export default defineConfig({
   base: "/portfolio/",
-	plugins: [react(), tailwindcss()],
-	test: {
-		globals: true,
-		environment: "jsdom",
-	},
+  plugins: [react(), tailwindcss()],
+  test: {
+    globals: true,
+    environment: "jsdom",
+  },
 });
-
