@@ -13,6 +13,6 @@ export default defineConfig({
       enabled: true,
       reporter: ["text"],
       provider: "v8",
-    }
+    },
   },
 });
