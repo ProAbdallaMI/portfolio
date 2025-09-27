@@ -32,6 +32,7 @@ const Navbar = () => {
         <HamburgerToggle
           className="absolute left-4 top-5 md:hidden"
           onClick={() => setNavbarStatus(!navbarStatus)}
+          isOpen={navbarStatus}
         />
         <div className="text-xl font-bold text-primary">
           <a href="#">Portfolio</a>

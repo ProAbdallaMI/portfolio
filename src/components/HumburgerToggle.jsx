@@ -1,11 +1,9 @@
 // HamburgerToggle.jsx
 import { useState } from "react";
 
-export default function HamburgerToggle({ className = "", onClick }) {
-  const [isOpen, setIsOpen] = useState(false);
-
+export default function HamburgerToggle({ className = "", onClick, isOpen }) {
+  
   const handleClick = () => {
-    setIsOpen(!isOpen);
     if (onClick) onClick();
   };
 
