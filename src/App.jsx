@@ -5,15 +5,18 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
 function App() {
-  return (
-    <>
-      <Navbar />
-      <Home />
-      <Projects />
-      <Skills />
-      <Contact />
-    </>
-  );
+	return (
+		
+					<>
+						<Navbar />
+						<Home />
+						<Projects />
+						<Skills />
+						<Contact />
+					</>
+	
+	);
 }
 
 export default App;
+
