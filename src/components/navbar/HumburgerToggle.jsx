@@ -1,7 +1,6 @@
 // HamburgerToggle.jsx
 
 export default function HamburgerToggle({ className = "", onClick, isOpen }) {
-  
   const handleClick = () => {
     if (onClick) onClick();
   };
