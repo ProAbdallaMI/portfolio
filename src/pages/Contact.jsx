@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen flex flex-col justify-center items-center bg-gray-100"
+      className="min-h-screen flex flex-col justify-center items-center px-6"
     >
       <h2 className="text-3xl font-bold mb-4">Contact Me</h2>
       <form className="w-full max-w-md bg-white p-8 rounded shadow-md">
