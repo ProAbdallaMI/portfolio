@@ -1,5 +1,6 @@
 
 import profileImage from '../assets/profile.png';
+import AutoWriter from '../components/home/AutoWriter';
 
 const Home = () => {
 	return (
@@ -8,9 +9,8 @@ const Home = () => {
 			className="flex flex-col md:flex-row justify-evenly items-center h-screen px-6"
 		>
 			<div className='max-w-xl'>
-				<h1 className="text-2xl md:text-5xl font-bold mb-4 text-left w-full">
-					I'm a Frontend Developer
-					{/* <AutoWriter texts={["Frontend Developer", "Web Developer"]} /> */}
+				<h1 className="text-2xl md:text-4xl font-bold mb-4 text-left w-full">
+					<AutoWriter texts={["Frontend Developer", "Web Developer"]} />
 				</h1>
 				<p className="text-sm md:text-lg text-gray-700 w-full text-left">
 					Frontend Developer with 1 year of freelance experience in

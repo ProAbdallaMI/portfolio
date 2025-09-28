@@ -1,67 +1,83 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const AutoWriter = ({
-  texts,
-  typingSpeed = 100,
-  deletingSpeed = 30,
-  waitingTime = 2000,
+	texts,
+	typingSpeed = 100,
+	deletingSpeed = 30,
+	waitingTime = 2000,
 }) => {
-  const [text, setText] = useState("");
-  const [currentTextIndex, setCurrentTextIndex] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [isWaiting, setIsWaiting] = useState(false);
+	const [cursor, setCursor] = useState(true);
+	const [text, setText] = useState("");
+	const currentIndex = useRef(0);
+	const [typing, setTyping] = useState(true);
+	const [deleting, setDeleting] = useState(false);
+	const [waiting, setWaiting] = useState(true);
 
-  useEffect(() => {
-    let timeout;
+	// sleep function that returns a promise that resolves after a given time
+	const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-    const typeText = () => {
-      const currentFullText = texts[currentTextIndex];
+	useEffect(() => {
+		if (waiting) {
+			setCursor(true);
+			return;
+		}
+		const interval = setInterval(() => {
+			setCursor((prev) => !prev);
+		}, 500);
+		return () => clearInterval(interval);
+	}, [waiting]);
 
-      if (isWaiting) {
-        timeout = setTimeout(() => {
-          setIsWaiting(false);
-          setIsDeleting(true);
-        }, waitingTime);
-        return;
-      }
+	useEffect(() => {
+		// typing action part that types as desired props speed
+		if (typing) {
+			const typingMethod = async () => {
+				const currentText = texts[currentIndex.current];
+				if (text.length < currentText.length) {
+					await sleep(typingSpeed);
+					setText(currentText.slice(0, text.length + 1));
+				} else {
+					setWaiting(false);
+					setTyping(false);
+					await sleep(waitingTime);
+					setDeleting(true);
+				}
+			};
+			typingMethod();
+		}
 
-      if (isDeleting) {
-        if (text === "") {
-          setIsDeleting(false);
-          setCurrentTextIndex((prev) => (prev + 1) % texts.length);
-          return;
-        }
+		// deleting action part that deletes as desired props speed
+		if (deleting) {
+			const deletingMethod = async () => {
+				const currentText = texts[currentIndex.current];
+				if (text.length > 0) {
+					await sleep(deletingSpeed);
+					setText(currentText.slice(0, text.length - 1));
+				} else {
+					setDeleting(false);
+					setWaiting(true);
+					currentIndex.current =
+						(currentIndex.current + 1) % texts.length;
+					setTyping(true);
+				}
+			};
+			deletingMethod();
+		}
+	}, [
+		text,
+		typing,
+		deleting,
+		texts,
+		typingSpeed,
+		deletingSpeed,
+		waitingTime,
+	]);
 
-        timeout = setTimeout(() => {
-          setText(text.slice(0, -1));
-        }, deletingSpeed);
-        return;
-      }
-
-      if (text === currentFullText) {
-        setIsWaiting(true);
-        return;
-      }
-
-      timeout = setTimeout(() => {
-        setText(currentFullText.slice(0, text.length + 1));
-      }, typingSpeed);
-    };
-
-    timeout = setTimeout(typeText, 50);
-
-    return () => clearTimeout(timeout);
-  }, [
-    text,
-    currentTextIndex,
-    isDeleting,
-    isWaiting,
-    texts,
-    typingSpeed,
-    deletingSpeed,
-    waitingTime,
-  ]);
-
-  return <span>I'm a {text}</span>;
+	return (
+		<>
+			<span>I'm a {text}</span>
+			{cursor && <span>{cursor && "|"}</span>}
+		</>
+	);
 };
 export default AutoWriter;
+
