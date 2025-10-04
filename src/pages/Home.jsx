@@ -1,29 +1,19 @@
 
-import profileImage from '../assets/profile.png';
-import AutoWriter from '../components/home/AutoWriter';
 
 const Home = () => {
 	return (
 		<section
 			id="home"
-			className="flex flex-col md:flex-row justify-evenly items-center h-screen px-6"
+			className="flex flex-col md:flex-row h-screen w-full pt-20"
 		>
-			<div className='max-w-xl'>
-				<h1 className="text-2xl md:text-4xl font-bold mb-4 text-left w-full">
-					<AutoWriter texts={["Frontend Developer", "Web Developer"]} />
-				</h1>
-				<p className="text-sm md:text-lg text-gray-700 w-full text-left">
-					Frontend Developer with 1 year of freelance experience in
-					React, web design, and e-commerce platforms. Skilled in
-					turning Figma designs into responsive interfaces,
-					integrating REST APIs, and collaborating with UX teams to
-					deliver user-focused solutions.
-				</p>
+			<div className="w-full h-full">
+				<h1>Hi, I'm ABDALLA</h1>
+				<p>Do you looking for a Developer who finish your bussiness application in fast and safe way?</p>
+				<p>You're in the right place!</p>
+				<p>See my work first <a href="#projects">here</a>.</p>
+				<button>Hire Me</button>
 			</div>
-
-			<div className=''>
-				<img src={profileImage} alt="Profile" className='rounded-full w-40 md:w-80' />
-			</div>
+			<div className="w-full h-full">image</div>
 		</section>
 	);
 };
