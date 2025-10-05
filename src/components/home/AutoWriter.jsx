@@ -5,7 +5,6 @@ const AutoWriter = ({
 	typingSpeed = 100,
 	deletingSpeed = 30,
 	waitingTime = 2000,
-	className = "",
 }) => {
 	const [cursor, setCursor] = useState(true);
 	const [text, setText] = useState("");
