@@ -1,28 +1,32 @@
-
-import profileImage from '../assets/profile.png';
-import AutoWriter from '../components/home/AutoWriter';
-
 const Home = () => {
 	return (
 		<section
 			id="home"
-			className="flex flex-col md:flex-row justify-evenly items-center h-screen px-6"
+			className="flex flex-col md:flex-row h-screen w-full"
 		>
-			<div className='max-w-xl'>
-				<h1 className="text-2xl md:text-4xl font-bold mb-4 text-left w-full">
-					<AutoWriter texts={["Frontend Developer", "Web Developer"]} />
+			<div className="w-full h-2/5 mt-20 md:mt-0 md:h-full p-10 md:p-30 flex flex-col justify-center gap-y-5 md:gap-y-10">
+				<h1 className="text-3xl md:text-4xl font-bold">
+					Hi, I'm ABDALLA
 				</h1>
-				<p className="text-sm md:text-lg text-gray-700 w-full text-left">
-					Frontend Developer with 1 year of freelance experience in
-					React, web design, and e-commerce platforms. Skilled in
-					turning Figma designs into responsive interfaces,
-					integrating REST APIs, and collaborating with UX teams to
-					deliver user-focused solutions.
-				</p>
+				<div className="md:text-lg">
+					<p className="">
+						Are you looking for a Developer who can finish your
+						business application in a fast and safe way?
+					</p>
+					<p>
+						See my work first{" "}
+						<a href="#projects" className="text-blue-800">
+							here
+						</a>
+						.
+					</p>
+				</div>
+				<button onClick={() => {location.href = "#contact"}} className="bg-orange-500 w-1/3 md:w-1/6 text-white py-2 px-4 rounded">
+					Hire Me
+				</button>
 			</div>
-
-			<div className=''>
-				<img src={profileImage} alt="Profile" className='rounded-full w-40 md:w-80' />
+			<div className="w-full h-2/5 md:h-full p-10 flex flex-col justify-center items-center">
+				image
 			</div>
 		</section>
 	);
