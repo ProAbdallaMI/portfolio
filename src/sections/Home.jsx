@@ -10,7 +10,7 @@ const Home = () => {
 	return (
 		<section
 			id="home"
-			className="flex flex-col h-screen w-full justify-evenly items-center bg-white"
+			className="flex flex-col h-screen w-full justify-center items-center bg-white"
 		>
 
 			{/* picture shape */}
@@ -46,7 +46,7 @@ const Home = () => {
 				</p>
 				<button
 					onClick={() => {
-						location.href = "#contact";
+						location.href = "mailto:abdallamohamedb11@gmail.com";
 					}}
 					className="bg-primary w-fit text-secondary py-2 px-4 rounded flex"
 				>
