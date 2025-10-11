@@ -1,15 +1,36 @@
 import profile from "../assets/profile.png";
 import arrow from "../assets/arrow.svg";
+import greenCircle from "../assets/green-circle.svg";
+import rectangle26 from "../assets/rectangle-26.svg";
+import rectangleBlue from "../assets/rectangle-26-blue.svg";
+import yellowCircle from "../assets/yellow-circle.svg";
+import triangle from "../assets/triangle.svg";
 
 const Home = () => {
 	return (
 		<section
 			id="home"
-			className="flex flex-col h-screen w-full justify-center items-center bg-white"
+			className="flex flex-col h-screen w-full justify-evenly items-center bg-white"
 		>
+
+			{/* picture shape */}
+			<img src={greenCircle} alt="shape" className="w-3 absolute left-10 top-20" />
+			{/* <img src={rectangle26} alt="shape" className="w-3 absolute right-15 top-30" /> */}
+			{/* <img src={yellowCircle} alt="shape" className="w-3 absolute left-15 top-70" /> */}
+			<img src={triangle} alt="shape" className="w-3 absolute right-15 top-80" />
+
+
+
 			<div className="flex justify-center items-center">
 				<img src={profile} alt="profile picture" className="w-6/10" />
 			</div>
+
+
+			{/* text shapes */}
+			{/* <img src={yellowCircle} alt="shape" className="w-3 absolute left-5 top-95" /> */}
+			{/* <img src={greenCircle} alt="shape" className="w-3 absolute left-20 top-165" /> */}
+			<img src={rectangleBlue} alt="shape" className="w-3 absolute right-35 top-150" />
+			
 			<div className="w-full p-10 flex flex-col justify-center gap-y-5">
 				<h1 className="text-3xl font-bold">
 					I'm Abdalla Mohamed
