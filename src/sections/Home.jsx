@@ -46,7 +46,7 @@ const Home = () => {
 				</p>
 				<button
 					onClick={() => {
-						location.href = "#contact";
+						location.href = "mailto:abdallamohamedb11@gmail.com";
 					}}
 					className="bg-primary w-fit text-secondary py-2 px-4 rounded flex"
 				>
