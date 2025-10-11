@@ -15,8 +15,8 @@ const Home = () => {
 
 			{/* picture shape */}
 			<img src={greenCircle} alt="shape" className="w-3 absolute left-10 top-20" />
-			{/* <img src={rectangle26} alt="shape" className="w-3 absolute right-15 top-30" /> */}
-			{/* <img src={yellowCircle} alt="shape" className="w-3 absolute left-15 top-70" /> */}
+			<img src={rectangle26} alt="shape" className="hidden" />
+			<img src={yellowCircle} alt="shape" className="hidden" />
 			<img src={triangle} alt="shape" className="w-3 absolute right-15 top-80" />
 
 
@@ -27,10 +27,10 @@ const Home = () => {
 
 
 			{/* text shapes */}
-			{/* <img src={yellowCircle} alt="shape" className="w-3 absolute left-5 top-95" /> */}
-			{/* <img src={greenCircle} alt="shape" className="w-3 absolute left-20 top-165" /> */}
+			<img src={yellowCircle} alt="shape" className="hidden" />
+			<img src={greenCircle} alt="shape" className="hidden" />
 			<img src={rectangleBlue} alt="shape" className="w-3 absolute right-35 top-150" />
-			
+
 			<div className="w-full p-10 flex flex-col justify-center gap-y-5">
 				<h1 className="text-3xl font-bold">
 					I'm Abdalla Mohamed
