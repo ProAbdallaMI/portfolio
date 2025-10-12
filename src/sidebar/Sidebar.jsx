@@ -1,10 +1,11 @@
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 import photo from "../assets/photo.jpg";
 import { PiGithubLogoFill } from "react-icons/pi";
 import { TbWorld } from "react-icons/tb";
 import AsideList from "../components/sidebar/AsideList";
 import skillsIcon from "../assets/skillsIcon.svg";
 import downloadIcon from "../assets/downloadIcon.svg";
+import { MdOutlineMail } from "react-icons/md";
 
 const aboutMe = {
 	Age: new Date().getFullYear() - 2004,
@@ -51,15 +52,19 @@ const Sidebar = () => {
 				<div className="flex gap-2">
 					<a
 						href="https://www.linkedin.com/in/abdalla-mohamed-ashag/"
-						className="href"
+						className=""
 					>
 						<FaLinkedinIn className="size-7 p-2 rounded-md bg-primary" />
 					</a>
 					<a href="https://github.com/proabdallami" className="">
 						<PiGithubLogoFill className="size-7 p-2 rounded-md bg-primary" />
 					</a>
-					<a href="https://abdallamashaq.com" className="href">
+                    {/* my own website will be added in the near future */}
+					{/* <a href="https://abdallamashaq.com" className="">
 						<TbWorld className="size-7 p-2 rounded-md bg-primary" />
+					</a> */}
+                    <a href="mailto:abdallamohamedb11@gmail.com" className="">
+						<MdOutlineMail className="size-7 p-2 rounded-md bg-primary" />
 					</a>
 				</div>
 			</div>
