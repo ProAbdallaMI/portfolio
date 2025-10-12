@@ -13,13 +13,18 @@ const skills = {
 	HTML5: 99,
 	CSS3: 99,
 	JavaScript: 95,
-	Git: 90,
+	React: 90,
 };
-const extraSkills = ["MCP Protocol", "Version Controll System"];
+const extraSkills = [
+	"React-router - SPA routing",
+    "Redux - state management",
+	"Git - Version Controll",
+    "MCP Protocol",
+];
 
 const Sidebar = () => {
 	return (
-		<aside className="flex flex-col justify-center items-center my-5 gap-5 ">
+		<aside className="flex flex-col justify-center items-center my-5 gap-5">
 			{/* picture, name, links */}
 			<div className="flex flex-col justify-center items-center gap-5">
 				{/* profile picture */}
@@ -62,7 +67,7 @@ const Sidebar = () => {
 				</div>
 
 				<div className="flex justify-between">
-					<h4 className="bg-primary px-2">Resedence:</h4>
+					<h4 className="bg-primary px-2">Residence:</h4>
 					<span> UAE </span>
 				</div>
 
@@ -75,11 +80,14 @@ const Sidebar = () => {
 			{/* languages and skills*/}
 			<AsideList skillsAndLanguages={[languages, skills]} />
 
+			<hr className="text-background w-full" />
+
 			{/* extra skills */}
-			<div>
+			<div className="flex flex-col w-full gap-3">
+				<h1 className="font-bold">Extra Skills</h1>
 				{extraSkills.map((el) => (
-					<div>
-						<img src={skillsIcon} alt="item icon" />
+					<div className="flex gap-x-2 text-paragraph">
+						<img src={skillsIcon} alt="item icon" className="w-3" />
 						<span>{el}</span>
 					</div>
 				))}

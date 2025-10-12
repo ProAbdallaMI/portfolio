@@ -21,7 +21,7 @@ const Navbar = () => {
 							navbarStatus ? "translate-x-full" : ""
 						}`}>
 					<div onClick={() => setNavbarStatus((prev) => !prev)}
-						className={`w-70/100 overflow-auto absolute top-0 left-0 z-10 shadow-2xl bg-white p-10`}
+						className={`w-70/100 h-screen overflow-y-auto absolute top-0 left-0 z-10 shadow-2xl bg-white p-10`}
 					>
 						<Sidebar />
 					</div>
