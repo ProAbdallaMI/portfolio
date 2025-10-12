@@ -3,7 +3,7 @@ import HamburgerToggle from "./HumburgerToggle";
 import Sidebar from "../../sidebar/Sidebar";
 
 const Navbar = () => {
-	const [navbarStatus, setNavbarStatus] = useState(true);
+	const [navbarStatus, setNavbarStatus] = useState(false);
 
 	return (
 		<nav className="bg-white p-4 text-gray-800 fixed w-full top-0 left-0 z-10">
