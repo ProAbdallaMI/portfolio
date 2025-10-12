@@ -4,7 +4,13 @@ import { PiGithubLogoFill } from "react-icons/pi";
 import { TbWorld } from "react-icons/tb";
 import AsideList from "../components/sidebar/AsideList";
 import skillsIcon from "../assets/skillsIcon.svg";
+import downloadIcon from "../assets/downloadIcon.svg";
 
+const aboutMe = {
+	Age: new Date().getFullYear() - 2004,
+	Residence: "UAE",
+	Freelance: <span className="text-green-500"> Available </span>,
+};
 const languages = {
 	Arabic: 100,
 	English: 70,
@@ -12,14 +18,15 @@ const languages = {
 const skills = {
 	HTML5: 99,
 	CSS3: 99,
+	Tailwindcss: 98,
 	JavaScript: 95,
 	React: 90,
 };
 const extraSkills = [
 	"React-router - SPA routing",
-    "Redux - state management",
+	"Redux - state management",
 	"Git - Version Controll",
-    "MCP Protocol",
+	"MCP Protocol",
 ];
 
 const Sidebar = () => {
@@ -61,24 +68,20 @@ const Sidebar = () => {
 
 			{/* details about me */}
 			<div className="flex flex-col w-full gap-3">
-				<div className="flex justify-between">
-					<h4 className="bg-primary px-2">Age:</h4>
-					<span> {new Date().getFullYear() - 2004} </span>
-				</div>
-
-				<div className="flex justify-between">
-					<h4 className="bg-primary px-2">Residence:</h4>
-					<span> UAE </span>
-				</div>
-
-				<div className="flex justify-between">
-					<h4 className="bg-primary px-2">Freelance:</h4>
-					<span className="text-green-500"> Available </span>
-				</div>
+				{Object.keys(aboutMe).map((item) => (
+					<div className="flex justify-between">
+						<h4 className="bg-primary px-2">{item}:</h4>
+						<span> {aboutMe[item]} </span>
+					</div>
+				))}
 			</div>
 
+			<hr className="text-background w-full" />
+
 			{/* languages and skills*/}
-			<AsideList skillsAndLanguages={[languages, skills]} />
+			<AsideList title="Languages" dataSet={languages} />
+			<hr className="text-background w-full" />
+			<AsideList title="Skills" dataSet={skills} />
 
 			<hr className="text-background w-full" />
 
@@ -91,6 +94,19 @@ const Sidebar = () => {
 						<span>{el}</span>
 					</div>
 				))}
+			</div>
+
+			<hr className="text-background w-full" />
+
+			{/* download CV button */}
+			<div className="flex justify-center gap-x-3 bg-primary text-secondary px-5 py-2 w-full font-bold">
+				<a
+					href="https://drive.google.com/uc?export=download&id=1Aw4T8xL5U0SQ31zkWNTkd3TvxMeUe3ZL"
+					download={"Frontend Developer.pdf"}
+				>
+					<button>Download CV</button>
+				</a>
+				<img src={downloadIcon} alt="download icon" />
 			</div>
 		</aside>
 	);
