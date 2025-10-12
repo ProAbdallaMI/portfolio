@@ -17,11 +17,11 @@ const Navbar = () => {
 					<a href="#">Portfolio</a>
 				</div>
 
-				<div onClick={() => setNavbarStatus(false)} className={`absolute top-0 w-full h-screen -left-full transition-all duration-200 ${
+				<div onClick={() => setNavbarStatus((prev) => !prev)} className={`absolute h-screen top-0 w-full -left-full transition-all duration-200 ${
 							navbarStatus ? "translate-x-full" : ""
 						}`}>
-					<div
-						className={`w-70/100 h-screen absolute top-0 left-0 z-10 shadow-2xl bg-white p-10`}
+					<div onClick={() => setNavbarStatus((prev) => !prev)}
+						className={`w-70/100 overflow-auto absolute top-0 left-0 z-10 shadow-2xl bg-white p-10`}
 					>
 						<Sidebar />
 					</div>
