@@ -26,7 +26,7 @@ const skills = {
 const extraSkills = [
 	"React-router - SPA routing",
 	"Redux - state management",
-	"Git - Version Controll",
+	"Git - Version Control",
 	"MCP Protocol",
 ];
 
