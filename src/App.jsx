@@ -5,7 +5,7 @@ import Education from "./sections/Education";
 
 function App() {
   return (
-    <div className="flex flex-col gap-15 bg-background text-secondary text-sm">
+    <div className="flex flex-col gap-10 bg-background text-secondary text-sm">
       <Navbar />
       <Home />
       <Education />
