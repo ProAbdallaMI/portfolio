@@ -30,7 +30,12 @@ jobs:
         run: npm run test
 
       - name: Build (Vite)
+        if: github.ref == 'refs/heads/main'
         run: npm run build
+
+      - name: Build (Vite)
+        if: github.ref == 'refs/heads/develop'
+        run: npm run build -- --base=/portfolio/
 
       - name: Upload dist artifact
         uses: actions/upload-artifact@v4
