@@ -38,7 +38,7 @@ jobs:
           name: dist
           path: dist
 
-  deploy:
+  test-deploy:
     needs: ci # wait until "ci" job completes successfully
     if: github.ref == 'refs/heads/develop' # only run on develop branch
     runs-on: ubuntu-latest
