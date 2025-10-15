@@ -2,6 +2,7 @@ import Home from "./sections/Home";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./sections/Footer";
 import Education from "./sections/Education";
+import Sidebar from "./sidebar/Sidebar";
 
 function App() {
   return (
