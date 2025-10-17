@@ -1,5 +1,5 @@
 import { FaLinkedinIn } from "react-icons/fa";
-import photo from "../assets/photo.png";
+import photo from "../assets/photo.jpg";
 import { PiGithubLogoFill } from "react-icons/pi";
 import { TbWorld } from "react-icons/tb";
 import AsideList from "../components/sidebar/AsideList";
