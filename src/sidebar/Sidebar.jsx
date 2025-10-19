@@ -8,7 +8,6 @@ import downloadIcon from "../assets/downloadIcon.svg";
 import { MdOutlineMail } from "react-icons/md";
 
 const aboutMe = {
-	Age: new Date().getFullYear() - 2004,
 	Residence: "UAE",
 	Freelance: <span className="text-green-500"> Available </span>,
 };
@@ -75,7 +74,7 @@ const Sidebar = () => {
 			<div className="flex flex-col w-full gap-3">
 				{Object.keys(aboutMe).map((item) => (
 					<div className="flex justify-between">
-						<h4 className="bg-primary px-2">{item}:</h4>
+						<h4 className="px-2">{item}:</h4>
 						<span> {aboutMe[item]} </span>
 					</div>
 				))}
