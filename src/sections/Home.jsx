@@ -33,6 +33,7 @@ const Home = () => {
 
 			<div className="w-full p-10 flex flex-col justify-center gap-y-5">
 				<h1 className="text-3xl font-bold">
+					{/* eslint-disable-next-line react/no-unescaped-entities */}
 					I'm Abdalla Mohamed
 					<br />
 					<span className="text-primary opacity-95">
