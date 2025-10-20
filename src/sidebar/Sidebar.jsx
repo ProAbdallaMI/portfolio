@@ -1,7 +1,6 @@
 import { FaLinkedinIn } from "react-icons/fa";
 import photo from "../assets/photo.png";
 import { PiGithubLogoFill } from "react-icons/pi";
-import { TbWorld } from "react-icons/tb";
 import AsideList from "../components/sidebar/AsideList";
 import skillsIcon from "../assets/skillsIcon.svg";
 import downloadIcon from "../assets/downloadIcon.svg";
@@ -72,8 +71,8 @@ const Sidebar = () => {
 
 			{/* details about me */}
 			<div className="flex flex-col w-full gap-3">
-				{Object.keys(aboutMe).map((item) => (
-					<div className="flex justify-between">
+				{Object.keys(aboutMe).map((item, index) => (
+					<div key={index} className="flex justify-between">
 						<h4 className="px-2">{item}:</h4>
 						<span> {aboutMe[item]} </span>
 					</div>
@@ -92,8 +91,8 @@ const Sidebar = () => {
 			{/* extra skills */}
 			<div className="flex flex-col w-full gap-3">
 				<h1 className="font-bold">Extra Skills</h1>
-				{extraSkills.map((el) => (
-					<div className="flex gap-x-2 text-paragraph">
+				{extraSkills.map((el, index) => (
+					<div key={index} className="flex gap-x-2 text-paragraph">
 						<img src={skillsIcon} alt="item icon" className="w-3" />
 						<span>{el}</span>
 					</div>
