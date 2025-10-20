@@ -3,8 +3,8 @@ const AsideList = ({ title, dataSet }) => {
 		<div className="flex flex-col w-full gap-5">
 			<h1 className="font-bold">{title}</h1>
 			<div className="flex flex-col w-full gap-3">
-				{Object.keys(dataSet).map((item) => (
-					<div className="text-paragraph flex flex-col">
+				{Object.keys(dataSet).map((item, index) => (
+					<div key={index} className="text-paragraph flex flex-col">
 						<div className="flex justify-between">
 							<h4 className="">{item}</h4>
 							<span className="text-green-500">
