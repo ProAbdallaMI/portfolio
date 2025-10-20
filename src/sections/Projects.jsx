@@ -7,6 +7,18 @@ const sudamall = {
     title: "Sudamall - Ecommerce",
     about: "Mobile-first web app special to fit sudanese unique shopping experience for users as well as increase sales for Stores"
 }
+const doIt = {
+	image: sudamallIcon,
+	url: "https://proabdallami.github.io/Do-it/",
+	title: "Do-it - To Do List",
+	about: "this app can help you orgnize your daily tasks and increase your productivity"
+}
+const plantShopping = {
+	image: sudamallIcon,
+	url: "https://proabdallami.github.io/e-plantShopping/",
+	title: "Plant Shopping",
+	about: "for people who love plants can shop online and find great different experience for plant shopping"
+}
 
 const Projects = () => {
 	return (
@@ -17,6 +29,8 @@ const Projects = () => {
 			</p>
             <div className="flex justify-center items-center flex-wrap gap-5 w-full p-10">
 				<ProjectCard projectCard={sudamall} />
+				<ProjectCard projectCard={doIt} />
+				<ProjectCard projectCard={plantShopping} />
 			</div>
 		</section>
 	);

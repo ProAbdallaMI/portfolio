@@ -16,17 +16,22 @@ const languages = {
 	English: 70,
 };
 const skills = {
-	HTML5: 100,
-	CSS3: 100,
-	Tailwindcss: 100,
-	JavaScript: 90,
-	React: 90,
+  HTML5: 100,
+  CSS3: 95,
+  TailwindCSS: 100,
+  JavaScript: 90,
+  React: 100,
+  Vite: 80,
+  Vitest: 80,
 };
+
 const extraSkills = [
-	"React-router - SPA routing",
-	"Redux - state management",
-	"Git - Version Control",
-	"MCP Protocol",
+  "React Router – SPA routing and navigation",
+  "Redux Toolkit & Context API – State management",
+  "Git & GitHub – Version control and collaboration",
+  "Responsive Design – Flexbox, Grid, and mobile-first layouts",
+  "API Integration – Fetch and Axios for RESTful services",
+  "Deployment – Nginx, Docker and GitHub Pages",
 ];
 
 const Sidebar = () => {
