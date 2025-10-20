@@ -5,6 +5,7 @@ import AsideList from "../components/sidebar/AsideList";
 import skillsIcon from "../assets/skillsIcon.svg";
 import downloadIcon from "../assets/downloadIcon.svg";
 import { MdOutlineMail } from "react-icons/md";
+import { TbWorld } from "react-icons/tb";
 
 const aboutMe = {
 	Residence: "UAE",
@@ -15,10 +16,10 @@ const languages = {
 	English: 70,
 };
 const skills = {
-	HTML5: 99,
-	CSS3: 99,
-	Tailwindcss: 98,
-	JavaScript: 95,
+	HTML5: 100,
+	CSS3: 100,
+	Tailwindcss: 100,
+	JavaScript: 90,
 	React: 90,
 };
 const extraSkills = [
@@ -57,10 +58,10 @@ const Sidebar = () => {
 					<a href="https://github.com/proabdallami" className="">
 						<PiGithubLogoFill className="size-7 p-2 rounded-md bg-primary" />
 					</a>
-                    {/* my own website will be added in the near future */}
-					{/* <a href="https://abdallamashaq.com" className="">
+                    
+					<a href="https://abdallamohamed.com" className="">
 						<TbWorld className="size-7 p-2 rounded-md bg-primary" />
-					</a> */}
+					</a>
                     <a href="mailto:abdallamohamedb11@gmail.com" className="">
 						<MdOutlineMail className="size-7 p-2 rounded-md bg-primary" />
 					</a>

@@ -2,10 +2,10 @@ import { FaArrowRight } from "react-icons/fa";
 
 const ProjectCard = ({ projectCard }) => {
 	return (
-		<div className="max-w-sm bg-white border border-background rounded-lg shadow-sm">
+		<div className="max-w-sm bg-white border border-background rounded-sm shadow-sm">
 			<a target="_blank" href={projectCard.url} rel="noreferrer">
 				<img
-					className="rounded-t-lg"
+					className=""
 					src={projectCard.image}
 					alt="card image"
 				/>
@@ -20,7 +20,7 @@ const ProjectCard = ({ projectCard }) => {
 				<a
 					target="_blank"
 					href={projectCard.url}
-					className="inline-flex items-center px-3 py-2 font-medium text-center text-white bg-primary rounded-lg focus:ring-4 focus:outline-none" rel="noreferrer"
+					className="inline-flex items-center px-3 py-1 font-medium text-center text-white bg-primary rounded-sm focus:ring-4 focus:outline-none" rel="noreferrer"
 				>
 					Visit
 					<FaArrowRight className="ml-2" />
