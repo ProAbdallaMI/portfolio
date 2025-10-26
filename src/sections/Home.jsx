@@ -10,14 +10,14 @@ const Home = () => {
 	return (
 		<section
 			id="home"
-			className="flex flex-col h-screen w-full justify-center gap-5 items-center bg-white"
+			className="flex flex-col h-screen w-full justify-center gap-5 items-center bg-white md:flex-row-reverse"
 		>
 
 			{/* picture shape */}
-			<img src={greenCircle} alt="shape" className="w-3 absolute left-10 top-20" />
-			<img src={rectangle26} alt="shape" className="hidden" />
-			<img src={yellowCircle} alt="shape" className="hidden" />
-			<img src={triangle} alt="shape" className="w-3 absolute right-15 top-80" />
+			<img src={greenCircle} alt="shape" className="w-3 absolute left-10 top-20 md:left-65/100 md:top-20/100" />
+			<img src={rectangle26} alt="shape" className="hidden w-3 absolute left-90/100 top-25/100 md:block" />
+			<img src={yellowCircle} alt="shape" className="hidden w-3 absolute left-70/100 top-80/100 md:block" />
+			<img src={triangle} alt="shape" className="w-3 absolute right-15 top-80 md:top-85/100 md:left-95/100" />
 
 
 
@@ -27,11 +27,11 @@ const Home = () => {
 
 
 			{/* text shapes */}
-			<img src={yellowCircle} alt="shape" className="hidden" />
-			<img src={greenCircle} alt="shape" className="hidden" />
-			<img src={rectangleBlue} alt="shape" className="w-3 absolute right-35 top-150" />
+			<img src={yellowCircle} alt="shape" className="hidden absolute w-3 top-25/100 left-30/100 md:block" />
+			<img src={greenCircle} alt="shape" className="hidden absolute w-3 top-75/100 left-35/100 md:block" />
+			<img src={rectangleBlue} alt="shape" className="w-3 absolute right-35 top-150 md:top-60/100 md:left-50/100" />
 
-			<div className="w-full p-10 flex flex-col justify-center gap-y-5">
+			<div className="w-full p-10 flex flex-col justify-center gap-y-5 md:w-5/10">
 				<h1 className="text-3xl font-bold">
 					{/* eslint-disable-next-line react/no-unescaped-entities */}
 					I'm Abdalla Mohamed
