@@ -6,7 +6,7 @@ import Projects from "./sections/Projects";
 
 function App() {
 	return (
-		<div className="flex flex-col gap-15 bg-background text-secondary text-sm md:flex-row md:gap-2">
+		<div className="flex flex-col gap-15 bg-background text-secondary text-sm md:flex-row md:gap-5">
 			<Navbar />
 			<div className="md:flex md:flex-col md:w-75/100 md:gap-15">
 				<Home />
