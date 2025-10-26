@@ -10,7 +10,7 @@ const Home = () => {
 	return (
 		<section
 			id="home"
-			className="flex flex-col h-screen w-full justify-center gap-5 items-center bg-white md:flex-row-reverse"
+			className="flex flex-col h-180 w-full justify-center gap-5 items-center bg-white md:flex-row-reverse"
 		>
 
 			{/* picture shape */}
