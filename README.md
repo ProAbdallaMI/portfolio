@@ -1,16 +1,42 @@
-# React + Vite
+# ABDALLA MOHAMED - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About Me
+Frontend Developer with expertise in React and JavaScript. I specialize in creating responsive and user-friendly web applications with a focus on clean, maintainable code and optimal user experience.
 
-Currently, two official plugins are available:
+## Technical Skills
+- **Frontend**: React.js, JavaScript (ES6+), HTML5, CSS3
+- **State Management**: React Context API
+- **Build Tools**: Vite, npm
+- **Version Control**: Git, GitHub
+- **Code Quality**: ESLint
+- **Responsive Design**: CSS Media Queries, Flexbox, Grid
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Structure
+```
+src/
+├── components/      # Reusable UI components
+├── sections/        # Main page sections
+├── assets/         # Static assets
+└── sidebar/        # Sidebar components
+```
 
-## React Compiler
+## Features
+- Modern React development with Vite
+- Component-based architecture
+- Responsive design
+- Fast refresh and HMR support
+- ESLint integration for code quality
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Getting Started
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Run development server: `npm run dev`
+4. Build for production: `npm run build`
 
-## Expanding the ESLint configuration
+## Contact
+- GitHub: [@ProAbdallaMI](https://github.com/ProAbdallaMI)
+- Role: Frontend Developer | React Developer
+- Portfolio: [View Live Site](#) <!-- Add your deployed portfolio URL here -->
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## License
+This project is open source and available under the [MIT License](LICENSE).
