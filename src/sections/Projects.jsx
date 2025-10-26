@@ -1,5 +1,7 @@
 import ProjectCard from "../components/projects/ProjectCard";
 import sudamallIcon from "../assets/sudamall.jpg"
+import doItIcon from "../assets/doItIcon.png"
+import eplantIcon from "../assets/eplantIcon.webp";
 
 const sudamall = {
     image: sudamallIcon,
@@ -8,13 +10,13 @@ const sudamall = {
     about: "Mobile-first web app special to fit sudanese unique shopping experience for users as well as increase sales for Stores"
 }
 const doIt = {
-	image: sudamallIcon,
+	image: doItIcon,
 	url: "https://proabdallami.github.io/Do-it/",
 	title: "Do-it - To Do List",
 	about: "this app can help you orgnize your daily tasks and increase your productivity"
 }
 const plantShopping = {
-	image: sudamallIcon,
+	image: eplantIcon,
 	url: "https://proabdallami.github.io/e-plantShopping/",
 	title: "Plant Shopping",
 	about: "for people who love plants can shop online and find great different experience for plant shopping"
