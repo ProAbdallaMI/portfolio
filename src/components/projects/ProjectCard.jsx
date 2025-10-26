@@ -5,7 +5,7 @@ const ProjectCard = ({ projectCard }) => {
 		<div className="max-w-sm bg-white border border-background rounded-sm shadow-sm h-100/100 md:w-30/100">
 			<a target="_blank" href={projectCard.url} rel="noreferrer">
 				<img
-					className="h-50/100"
+					className="h-50/100 m-auto"
 					src={projectCard.image}
 					alt="card image"
 				/>
