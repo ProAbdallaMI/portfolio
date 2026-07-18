@@ -22,7 +22,7 @@ const Home = () => {
 
 
 			<div className="flex justify-center items-center">
-				<img src={profile} alt="profile picture" className="w-6/10" />
+				<img src={profile} alt="profile picture" className="rounded-full w-6/10" />
 			</div>
 
 
