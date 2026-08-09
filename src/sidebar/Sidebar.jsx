@@ -43,7 +43,7 @@ const Sidebar = () => {
 				<img
 					src={photo}
 					alt="profile"
-					className="rounded-full w-20"
+					className="rounded w-20"
 				/>
 
 				{/* name and links */}
