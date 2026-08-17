@@ -57,7 +57,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ env.REGISTRY }}/proabdallami:latest
+          tags: ${{ env.REGISTRY }}/proabdallami/portfolio:latest
 
       - name: connect to the server using Tailscale
         uses: tailscale/github-action@v4
