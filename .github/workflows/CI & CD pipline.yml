@@ -48,6 +48,9 @@ jobs:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup builx action
+        uses: docker/setup-buildx-action@v4
         
       - name: Build and push Docker image
         uses: docker/build-push-action@v7
