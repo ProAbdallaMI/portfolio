@@ -1,0 +1,29 @@
+
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: portfolio
+    ports:
+      - "5173:5173"
+    networks:
+      - develop
+    develop:
+      watch:
+        - action: sync
+          path: ./src
+          target: /app/src
+
+        - action: rebuild
+          path: ./package*.json
+          target: /app/package*.json
+
+        - action: restart
+          path: vite.config.js
+          target: /app/vite.config.js
+
+networks:
+  develop:
+    name  : develop
+    driver: bridge
