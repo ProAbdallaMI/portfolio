@@ -1,18 +1,12 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import HamburgerToggle from "./HumburgerToggle";
 import Sidebar from "../../sidebar/Sidebar";
 
 const Navbar = () => {
 	const [navbarStatus, setNavbarStatus] = useState(false);
-	const component = useRef(null);
-
-	const [stickyHeight, setStickyHeight] = useState(0);
-	useEffect( () => {
-		setStickyHeight(component.current.scrollHeight - window.innerHeight);
-	}, [])
 
 	return (
-		<nav ref={component} className={`bg-white p-4 text-gray-800 fixed w-full top-0 left-0 z-10 md:w-25/100 md:h-screen md:sticky md:left-0 md:p-0 md:-top-[${stickyHeight}px]`}>
+		<nav className={`bg-white p-4 text-gray-800 fixed w-full top-0 left-0 z-10 md:w-25/100 md:h-screen md:sticky md:left-0 md:p-0 md:-top-[600px]`} >
 			<div className="container mx-auto flex justify-center items-center">
 				<HamburgerToggle
 					className="absolute left-4 top-5 md:hidden"
